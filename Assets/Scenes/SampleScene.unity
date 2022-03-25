@@ -2274,7 +2274,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7744107, y: 1}
+    m_SensorSize: {x: 1.7777778, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -4091,7 +4091,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7744107, y: 1}
+    m_SensorSize: {x: 1.7777778, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -4653,9 +4653,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   oxygenTankPrefab: {fileID: 2589010559893736801, guid: 11697d847e2a87a44a6d45a49bbcdcff, type: 3}
   fieldRadius: 100
-  tankCount: 10
-  minTankRadius: 0.5
-  maxTankRadius: 5
+  tankCount: 40
+  tankRadius: 3
 --- !u!4 &962134971
 Transform:
   m_ObjectHideFlags: 0
@@ -6387,7 +6386,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7744107, y: 1}
+    m_SensorSize: {x: 1.7777778, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -6579,7 +6578,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7744107, y: 1}
+    m_SensorSize: {x: 1.7777778, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -7717,7 +7716,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7744107, y: 1}
+    m_SensorSize: {x: 1.7777778, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -8533,7 +8532,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7744107, y: 1}
+    m_SensorSize: {x: 1.7777778, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0

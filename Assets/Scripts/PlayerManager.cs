@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerManager : MonoBehaviour
 {
@@ -19,11 +20,27 @@ public class PlayerManager : MonoBehaviour
     
     void Update()
     {
-		if(currentOxygen > 0.01f)
-			currentOxygen -= healthDecreaseRate * Time.deltaTime;   //decreases player oxygen count over time
-		else {
-			currentOxygen = 0f;
+        if (currentOxygen > 0.01f) {
+            currentOxygen -= healthDecreaseRate * Time.deltaTime;    //decreases player oxygen count over time
+        }
+
+        else if (currentOxygen < 50.0f && currentOxygen > 45.0f) {
+            Debug.Log("Oxygen Status: Medium");
+            Debug.Log("Search for O2 soon...");
+        }
+        else if (currentOxygen < 25.0f && currentOxygen > 20.0f) {
+            Debug.Log("Oxygen Status: Low.");
+            Debug.Log("Find O2 Immediately.");
+        }
+        else 
+        {
+			currentOxygen = 0.0f;
+
 			// death handling
+            gameObject.SetActive(false);
+            Debug.Log("You have suffocated due to loss of oxygen.");
+
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); //resets the scene
 		}
     }
 }
